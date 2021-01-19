@@ -1,5 +1,10 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .typeform-widget {
-  border: 1px black;
+  border: 1px solid black;
   margin: 0px auto;
   max-width: 1000px;
 }
