@@ -115,13 +115,37 @@ table {
 }
 /* end reset browser styles */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Code Pro", monospace;
+}
+
 body {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
-.typeform-widget {
-  border: 1px solid black;
-  margin: 0px auto;
-  max-width: 1000px;
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.main_banner {
+  background-image: linear-gradient(90deg, #43aa8b, #90be6d);
+  height: 400px;
+  padding: 100px;
+}
+
+.main_headings {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  padding: 100px;
 }
