@@ -116,6 +116,16 @@ table {
 /* end reset browser styles */
 
 /* standard tags */
+
+body {
+  line-height: 1.75;
+}
+
+article {
+  margin: 0 auto;
+  width: 800px;
+}
+
 h1,
 h2,
 h3,
@@ -130,7 +140,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
+}
+
+p {
+  display: block;
+  font-size: 1.1em;
 }
 
 /* site navigation */
@@ -140,7 +155,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 110px;
-  width: 800px;
+  width: 830px;
   background-color: #fff;
   margin: 0 auto;
 }
@@ -203,11 +218,6 @@ nav .nav-logo:hover {
 .main_banner {
   background-color: #304e5a;
   border: 10px solid #e5e3dc;
-  /* background-image: linear-gradient(25deg, #c9e4de, #c6def1, #e2cfc4); */
-  /* background-image: linear-gradient(25deg, #d08c60, #c77743); */
-  /* background-image: linear-gradient(45deg, #6e5949, #997b66); */
-  /* background-image: linear-gradient(45deg, #12182b, #171e34); */
-  /* background-image: linear-gradient(45deg, #253055, #171e34); */
   height: 325px;
 }
 
@@ -217,6 +227,7 @@ nav .nav-logo:hover {
 
 .main_heading {
   margin: auto;
+  font-family: "Source Code Pro", monospace;
   width: 800px;
   text-align: center;
   padding: 100px;
@@ -225,4 +236,30 @@ nav .nav-logo:hover {
 
 .main_heading h2 {
   padding-top: 20px;
+}
+
+/* join page styles */
+
+.article_heading {
+  margin: auto;
+  width: 800px;
+  padding-top: 50px;
+  font-family: "Lato", sans-serif;
+}
+
+.subtitle {
+  font-size: 1.35em;
+}
+
+.article_image {
+  width: 100%;
+}
+
+.image_credit {
+  text-align: right;
+}
+
+.image_container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
