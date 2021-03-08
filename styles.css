@@ -157,6 +157,9 @@ footer {
 
 .footer-text {
   color: white;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 /* Media Queries */
