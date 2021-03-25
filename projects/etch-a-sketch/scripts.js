@@ -107,7 +107,7 @@ function resetGrid() {
     container.removeChild(container.firstChild);
   }
   size = parseInt(size);
-  if (size < 1 || size > 64 || Number.isNaN(size)) {
+  if (size < 1 || size > 64 || !Number.isInteger(size)) {
     size = prompt("Enter a NUMBER between 1 and 64");
     createGrid(16);
     fillGrid(16);
