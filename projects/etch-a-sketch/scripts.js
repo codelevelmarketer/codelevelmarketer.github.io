@@ -106,12 +106,16 @@ function resetGrid() {
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
-  size = parseInt(size);
   if (size < 1 || size > 64 || !Number.isInteger(size)) {
-    size = prompt("Enter a NUMBER between 1 and 64");
-    createGrid(16);
-    fillGrid(16);
+    size = prompt(
+      "A number is required! Please enter a number between 1 and 64"
+    );
+    if (size < 1 || size > 64 || !Number.isInteger(size)) {
+      createGrid(16);
+      fillGrid(16);
+    }
+  } else {
+    createGrid(size);
+    fillGrid(size);
   }
-  createGrid(size);
-  fillGrid(size);
 }
