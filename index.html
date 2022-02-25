@@ -1,122 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Code Level Marketers - A coding community for marketers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/normalize.css">
+    <link rel="stylesheet" href="/src/style.css">
 
-    <!-- Hand coded with love by jt. Thanks for peeking at my code! If you want to chat, email me at codelevelmarketer@gmail.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c06bdeb42.js" crossorigin="anonymous"></script>
+
+    <title>Code Level Marketer</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Code Level Marketers</a></li>
-          <!-- <li class="nav-item"><a href="/blog.html">Blog</a></li> -->
-          <li class="nav-item"><a href="#join" id="cta-btn">Join Now</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="main-header">
-          <div class="main-heading">
-            <h1>Welcome to Code Level Marketers</h1>
-            <h2>
-              A free online community for marketers who want to learn to code
-            </h2>
-      </div>
-    </section>
+    <nav id="top-nav" class="top-navigation">
 
 
-  
+    </nav>
 
-
-    <div class="block-med"></div>
-    <section id="about">
-
-      <div class="features">
-        <div class="features-image-container-left"><img src="/images/marketers-coding-unique.jpg" alt="" class="features-img">
-        <caption><span>Photo by Farshad Rezvanian</span></caption></div>
-        <div class="features-text">
-          <h3>What's unique about marketers learning to code?</h3>
-
-          <p>
-            As a marketer, you're not looking to switch careers. You're looking to add to your skillset. Because of this, learning to code takes on a different meaning.
-          </p>
-
-          <p>
-           Marketing technology is intertwined with your day-to-day job whether you're in a technical role, like marketing operations, or in a more creative role like, content or social media marketing.
-          </p>
-          <p>Code Level Marketers is an open community for marketers of all backgrounds.</p>
-         
-          
+    <article id="home-main">
+      <header id="home-header">
+        <div class="home-header-text">
+          <h1>Marketing & Coding</h1>
+          <p>A digital marketer learning to code for the fun of it and sharing lessons along the way.</p>
         </div>
-      </div>
-
-      <div class="features">
-        <div class="features-text">
-          <h3>Marketers want to learn how to code</h3>
-
-          <p>
-            Marketers are naturally inquisitive and self-motivated. I'm willing to bet you've already thought about learning to code or have started to dabble on your own.
-          </p>
-
-          <p>
-           Your excited to learn how to code and how it can help in your day job. Even a little bit of coding knowledge can go a long way to getting things done and removing imposter syndrome when you're talking to technical teams.
-          </p>
-          <p>Code Level Marketers is for anyone learning to code &ndash; whether that's a little HTML or diving into JavaScript or Python! </p>
-         
-          
+      </header>
+      <section id="latest-articles" class="content-section">
+        <div class="content-heading">
+          <div class="content-text">
+            <h2>Latest Articles</h2>
+          </div>
+          <div class="content-link">
+            <h3><a href="#">View All</a></h3>
+          </div>
         </div>
-        <div class="features-image-container-right"><img src="/images/marketers-learning-code.jpg" alt="" class="features-img"><caption><span>Photo by Vedant Choudhary</span></caption></div>
-       
-      </div>
 
-      <div class="features">
-        <div class="features-imge-container-left"><img src="/images/marketers-code-together.jpg" alt="" class="features-img">
-        <caption><span>Photo by Pineapple Supply Co.</span></caption></div>
-        <div class="features-text-right">
-          <h3>Why join Code Level Marketers?</h3>
-
-          <p>
-            Coding is better together. Benefits of the CLM community include:
-          </p>
-          <ul>
-            <li>Learn alongside peers who are also busy with work and real-life</li>
-            <li>Work at your own pace &ndash; drop in once a month or every day</li>
-            <li>Accountability for your goal of learning to code</li>
-            <li>Belong to a diverse, inclusive community of awesome marketers</li>
-          </ul>
-
+        <div id="article-list">
+          <a href="#">
+            <div class="article-container">
+              <div>
+                <span class="article-icon"> <i class="fa-solid fa-calendar-days"></i></i>
+                </span> 10 days of code mini challenge
+              </div>
+              <div class="article-date">
+                Feb 10
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article-container">
+              <div>
+                <span class="article-icon"> <i class="fa-solid fa-screwdriver-wrench"></i>
+                </span> Is coding a useful skill for marketing?
+              </div>
+              <div class="article-date">
+                Jan 29
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article-container">
+              <div>
+                <span class="article-icon"> <i class="fa-brands fa-html5"></i>
+                </span> Is HTML required for digital marketing?
+              </div>
+              <div class="article-date">
+                Dec 31
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article-container">
+              <div>
+                <span class="article-icon"> <i class="fa-brands fa-js-square"></i>
+                </span> Do marketers need to know JavaScript?
+              </div>
+              <div class="article-date">
+                Nov 07
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article-container">
+              <div>
+                <span class="article-icon"> <i class="fa-solid fa-graduation-cap"></i>
+                </span> Is it easier to learn digital marketing or coding?
+              </div>
+              <div class="article-date">
+                Oct 31
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="article-container">
+              <div>
+                <span class="article-icon"> <i class="fa-solid fa-person-hiking"></i>
+                </span> Grit, digital marketing, and coding
+              </div>
+              <div class="article-date">
+                Sept 27
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-      
-      <div class="features">
-        <div class="features-text" id="join">
-          <h3>Join Code Level Marketers</h3>
 
-          <p>
-            Code Level Marketers is a free, inclusive, and diverse community. The only requirement to join that you are a marketer!
-          </p>
+      </section>
 
-          <p>
-            For now, admissions are handled via email. Please include a link to your LinkedIn account (or verify your humanity some other way). You can email us at <a href="mailto:codelevelmarketer@gmail.com">codelevelmarketer@gmail.com</a> 
-          </p>
-          
-         
-          
+
+      <section id="projects" class="content-section">
+
+        <div class="content-heading">
+          <div class="content-text">
+            <h2>Projects</h2>
+          </div>
+          <div class="content-link">
+            <h3><a href="#">View All</a></h3>
+          </div>
         </div>
-        <div class="features-image-container-right"><img src="/images/marketers-code-community-join.jpg" alt="" class="features-img"><caption><span>Photo by Austin Chan</span></caption></div>
-       
-      </div>      
-    </section>
+        <a href="/projects/rock-paper-scissors/">
+          <div class="project-container">
+            <div class="project-img">
+              <img src="/img/project-image.png" width="150px" alt="">
+            </div>
+            <div class="project-text">
+              <h3>Rock Paper Scissors</h3>
+              <p>3 choices, infinite refactoring.</p>
+            </div>
+          </div>
+        </a>
 
-    <div class="block-med"></div>
+        <a href="/projects/etch-a-sketch/">
+          <div class="project-container">
+            <div class="project-img">
+              <img src="/img/project-image-2.png" width="150px" alt="">
+            </div>
+            <div class="project-text">
+              <h3>Etch-A-Sketch</h3>
+              <p>My 2 year old's favourite computer game!</p>
+            </div>
+          </div>
+        </a>
 
-    <footer>
-      <div class="footer-text"><p>Hand-coded with love by jt</p> </div>
+
+      </section>
+
+
+
+      <section id="newsletter" class="cta-section">
+
+        <h2>Newsletter</h2>
+        <p>Updates when I post next.</p>
+        <div class="button-block">
+          <a href="#" class="body-cta">Subscribe</a>
+        </div>
+
+
+      </section>
+
+
+
+
+
+    </article>
+
+
+    <footer id="footer">
+
     </footer>
+
+    <script src="/src/scripts.js"></script>
+
+
+
   </body>
 </html>
