@@ -10,17 +10,17 @@ topNavigation.innerHTML = `
           </div>
         </a>
         <div class="navbar-items">
-          <a href="/blog.html">
+          <a href="/blog">
             <div class="navbar-item">
               📝 Writing
             </div>
           </a>
-          <a href="/projects.html">
+          <a href="/projects">
             <div class="navbar-item">
               🤖 Projects
             </div>
           </a>
-          <a href="/about.html">
+          <a href="/about">
             <div class="navbar-item">
               ☕ About
             </div>
@@ -40,10 +40,9 @@ footer.innerHTML = `<div class="footer-header">
 <div class="footer-sitelinks">
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/blog.html
-">Writing</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="/about.html">About</a></li>
+    <li><a href="/blog">Writing</a></li>
+    <li><a href="projects">Projects</a></li>
+    <li><a href="/about">About</a></li>
   </ul>
 </div>
 <div class="footer-social">
