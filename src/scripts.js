@@ -93,3 +93,13 @@ footer.innerHTML = `<div class="footer-header">
 Copyright &copy; 2021 - 2022 Knowbots Inc. All Rights Reserved
 </div>
 `;
+
+// INSERT FAVICON
+
+let link = document.querySelector("link[rel~='icon']");
+if (!link) {
+  link = document.createElement("link");
+  link.rel = "icon";
+  document.getElementsByTagName("head")[0].appendChild(link);
+}
+link.href = "/favicon/favicon.ico";
