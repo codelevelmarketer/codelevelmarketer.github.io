@@ -3,7 +3,7 @@
 //An etch-a-sketch pad that paints random colors based on the user's mouse path
 
 // Plan
-
+ 
 // Insert a grid into a container using javascript
 // Hover effects for when a user moves cursor through grid
 // Ability to resize grid within fixed space

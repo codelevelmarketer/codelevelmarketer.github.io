@@ -1,3 +1,43 @@
+// 3RD PARTY SCRIPTS
+
+
+// Insert GTM Code
+
+const GTMSCRIPTBODY = document.createElement("script");
+const GTMSCRIPTHEAD = document.createElement("script");
+
+
+function runGTMbody() {
+  GTMSCRIPTBODY.innerHTML = `
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLGFKCF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->`
+  document.body.prepend(GTMSCRIPTBODY);
+};
+
+function runGTMhead() {
+  GTMSCRIPTHEAD.innerHTML = `
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MLGFKCF');</script>
+    <!-- End Google Tag Manager -->`
+  document.head.append(GTMSCRIPTHEAD);
+};
+
+
+// INITIALIZE SCRIPTS
+
+function runScript() {
+  runGTMbody();
+  runGTMhead();
+}
+
+runScript()
+
 // CREATE TOP NAVIGATION
 
 const topNavigation = document.getElementById("top-nav");
@@ -10,7 +50,7 @@ topNavigation.innerHTML = `
           </div>
         </a>
         <div class="navbar-items">
-          <a href="/blog">
+          <a href="/blog/">
             <div class="navbar-item">
               📝 Writing
             </div>
@@ -103,7 +143,4 @@ if (!link) {
   document.getElementsByTagName("head")[0].appendChild(link);
 }
 link.href = "/favicon/favicon.ico";
-
-
-// Insert GTM Code
 
