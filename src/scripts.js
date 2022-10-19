@@ -103,3 +103,7 @@ if (!link) {
   document.getElementsByTagName("head")[0].appendChild(link);
 }
 link.href = "/favicon/favicon.ico";
+
+
+// Insert GTM Code
+
