@@ -32,7 +32,7 @@ function runScript() {
   runGTMhead();
 }
 
-runScript();
+// runScript();
 
 // CREATE TOP NAVIGATION
 
