@@ -1,26 +1,24 @@
 // 3RD PARTY SCRIPTS
 
-
 // Insert GTM Code
 
-const GTMSCRIPTBODY = document.createElement("script");
+const GTMSCRIPTBODY = document.createElement("noscript");
 const GTMSCRIPTHEAD = document.createElement("script");
 
 
 function runGTMbody() {
-  GTMSCRIPTBODY.innerHTML = `
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLGFKCF"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`
+  GTMSCRIPTBODY.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLGFKCF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>`
   document.body.prepend(GTMSCRIPTBODY);
 };
 
 function runGTMhead() {
   GTMSCRIPTHEAD.innerHTML = `
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MLGFKCF');</script>`
+    })(window,document,'script','dataLayer','GTM-MLGFKCF');`
   document.head.append(GTMSCRIPTHEAD);
 };
 
@@ -28,11 +26,11 @@ function runGTMhead() {
 // INITIALIZE SCRIPTS
 
 function runScript() {
-  runGTMbody();
-  runGTMhead();
-}
+  runGTMbody()
+  runGTMhead()
+};
 
-// runScript();
+runScript();
 
 // CREATE TOP NAVIGATION
 
