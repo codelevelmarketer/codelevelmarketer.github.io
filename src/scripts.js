@@ -44,7 +44,7 @@ topNavigation.innerHTML = `
           </div>
         </a>
         <div class="navbar-items">
-          <a href="/blog/">
+          <a href="/blog">
             <div class="navbar-item">
               📝 Writing
             </div>
